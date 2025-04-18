@@ -36,7 +36,7 @@ uv run main.py
 - You can also customize the number of equations to test
 
 ## Results
-![Results Comparison](results_comparison.png)
+![Results Comparison](./results_comparison.png)
 
 ### Anslysis of Results
 Although it seems like RPN fails, there likely is little to no training data based around RPN equations. If this is true, then models perform exceptionally well in comparison to infix. However, this case would need to be isolated by fine-tuning a model with a corpus of data containing many RPN examples.
