@@ -5,6 +5,16 @@ This project tests how well language models (specifically qwen2.5:0.5b running i
 1. **Infix Notation**: Standard mathematical notation (e.g., `3 + 4 * 2`)
 2. **Reverse Polish Notation (RPN)**: Postfix notation where operators follow operands (e.g., `3 4 2 * +`)
 
+## Results
+![Results Comparison](./results_comparison.png)
+
+### Anslysis of Results
+Although it seems like RPN fails, there likely is little to no training data based around RPN equations. If this is true, then models perform exceptionally well in comparison to infix. However, this case would need to be isolated by fine-tuning a model with a corpus of data containing many RPN examples.
+
+Results are saved in two formats:
+1. `results.json`: Contains detailed results for each equation tested
+2. `results_comparison.png`: A visual comparison of model performance with both notations
+
 ## Project Overview
 
 The experiment:
@@ -34,17 +44,6 @@ uv run main.py
 - The script will first show a sample equation in both notations
 - You can then choose to run the full experiment with 1,000 equations
 - You can also customize the number of equations to test
-
-## Results
-![Results Comparison](./results_comparison.png)
-
-### Anslysis of Results
-Although it seems like RPN fails, there likely is little to no training data based around RPN equations. If this is true, then models perform exceptionally well in comparison to infix. However, this case would need to be isolated by fine-tuning a model with a corpus of data containing many RPN examples.
-
-Results are saved in two formats:
-1. `results.json`: Contains detailed results for each equation tested
-2. `results_comparison.png`: A visual comparison of model performance with both notations
-
 
 ## How It Works
 
