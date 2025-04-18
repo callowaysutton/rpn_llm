@@ -1,6 +1,6 @@
 # RPN vs Infix Notation Evaluation
 
-This project tests how well language models (specifically qwen2.5:0.5b running in Ollama) perform on mathematical equations presented in two different notations:
+This project tests how well language models (specifically qwen2.5:0.5b/Llama3.2:4b running in Ollama) perform on mathematical equations presented in two different notations:
 
 1. **Infix Notation**: Standard mathematical notation (e.g., `3 + 4 * 2`)
 2. **Reverse Polish Notation (RPN)**: Postfix notation where operators follow operands (e.g., `3 4 2 * +`)
